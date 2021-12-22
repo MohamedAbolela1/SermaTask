@@ -16,7 +16,6 @@ public class FileIOImpl implements FileIO {
     public List<String> readFile(Context context) throws IOException {
         List<String> content = new ArrayList<>();
         String str="";
-        StringBuilder buf = new StringBuilder();
         InputStream is = context.getResources().openRawResource(R.raw.employees);
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         if (is!=null) {
