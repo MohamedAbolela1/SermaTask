@@ -19,10 +19,10 @@ import java.util.stream.Collectors;
 
 public class Engine implements Runnable {
 
-    private FileIO fileIO;
-    private EmployeeService emplService;
-    private Context context;
-    private TextView textView;
+    private final FileIO fileIO;
+    private final EmployeeService emplService;
+    private final Context context;
+    private final TextView textView;
 
     public Engine(FileIO fileIO, EmployeeService emplService, Context context, TextView textView) {
         this.fileIO = fileIO;

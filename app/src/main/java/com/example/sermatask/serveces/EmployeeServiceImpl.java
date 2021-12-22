@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class EmployeeServiceImpl implements EmployeeService {
 
-    private EmployeeRepository emplRepo;
+    private final EmployeeRepository emplRepo;
 
     public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
         this.emplRepo = employeeRepository;

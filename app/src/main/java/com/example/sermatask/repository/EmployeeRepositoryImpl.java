@@ -10,7 +10,7 @@ import java.util.List;
 
 public class EmployeeRepositoryImpl implements EmployeeRepository {
 
-    private List<Record> database;
+    private final List<Record> database;
 
     public EmployeeRepositoryImpl() {
         this.database = new ArrayList<>();

@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface FileIO {
 
-//    List<String> read(String file);
-
     List<String> readFile (Context context) throws IOException;
 
     void write(String fileContent, String file);
